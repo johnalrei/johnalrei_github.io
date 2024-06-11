@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+
+:root{
+    --body-color : rgba(250,250,250);
+    --color-white: rgba(250,250,250);
+    --text-color-second: rgba(37,37,37);
+    --first-color: rgb(246, 107, 0);
+    --first-shadow: rgba(0,0,0,0.1);
+
+    --box-color: #fff;
+    --nav-color: #fff;
+    --nav-icon: #000;
+    --logo_color: #000;
+
+    --text-color: #606060;
+    --color-white: #242526;
+
+    --icon-color: #242526;
+    --mode-color: #fff;
+    --green: #fb7100fb;
+}
+
+
+
+
+
+
+
+
+.container {
+    width: 100%;
+    position: relative;
+    padding-left: 10px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 110%;
+    height: 110px;
+    line-height: 100px;
+    background: var(--nav-color);
+    padding-inline: 10wv;
+    transition: 0.3s;
+    z-index: 100;
+    text-decoration: dashed;
+}
+
+.nav-logo {
+    position: relative;
+    margin-left: 6%;
+   
+}
+
+.nav-name {
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--green);
+}
+
+
+/* products */
+
+.section {
+    padding: 100px 8%;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, auto));
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 2rem;
+    margin-top: 2%;
+}
+.box {
+    pad: 0px 20px 10px 20px;
+    background: transparent;
+    box-shadow: 5px 30px 56.1276px rgb(55 55 55 / 12%);
+    border-radius: 10px;
+    position: relative;
+    transition: all .35s ease;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+}
+.box h4 {
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.box h5 {
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.box .cart i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35px;
+    background: var(--green);
+    color: var(--nav-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.box:hover {
+    transform: translateY(-8px);
+}
+
